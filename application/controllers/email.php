@@ -9,18 +9,14 @@ class Email extends CI_Controller
 
 	function index()
 	{
-		$config = array(
-			'protocol' => 'smtp',
-			'smtp_host' => 'ssl://smtp.googlemail.com',
-			'smtp_port' => 465,
-			'smtp_user' => 'thanhtrung.it25@gmail.com',
-			'smtp_pass' => 'P@ssword25',
-		);
+		$this->load->view('newsletter');
+	}
 
-		$this->config->load('email');
-		$this->load->library('email', $config);
-
+	function send()
+	{
+		$this->load->library('email');
 		$this->email->set_newline("\r\n");
+
 		$this->email->from('thanhtrung.it25@gmail.com', 'Thanh Trung Dang');
 		$this->email->to('thanhtrung.it25@gmail.com');
 		$this->email->subject('This is an email test');
