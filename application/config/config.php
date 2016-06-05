@@ -24,6 +24,8 @@
 */
 $config['base_url'] = 'http://localhost/ci2_test1/';
 
+$config['server_root'] = $_SERVER['DOCUMENT_ROOT'];
+
 /*
 |--------------------------------------------------------------------------
 | Index File
