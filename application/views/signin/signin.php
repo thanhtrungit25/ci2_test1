@@ -34,5 +34,4 @@
 	</table>
 	<?php echo form_submit('submit', 'Submit'); ?> or
 	<?php echo anchor('signin', 'cancel'); ?>
-
 </form>
