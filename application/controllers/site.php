@@ -13,6 +13,17 @@ class Site extends CI_Controller
         $this->load->view('home', $data);
     }
 
+    function members_area()
+    {
+        $is_logged_in = $this->session->userdata('is_logged_in');
+
+        if (! isset($is_logged_in) || $is_logged_in != true)
+        {
+            redirect('login');
+        }
+        $this->load->view('members_area');
+    }
+
     function about()
     {
         $this->load->view('about');
