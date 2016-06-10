@@ -1,1 +1,2 @@
-members_area
+members_area<br />
+<?php echo anchor('login/logout', 'Logout'); ?>
