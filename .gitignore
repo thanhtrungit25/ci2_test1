@@ -7,3 +7,5 @@ application/cache/*
 application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
+/ci2_test1.sublime-project
+/ci2_test1.sublime-workspace
